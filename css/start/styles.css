@@ -1,0 +1,28 @@
+h1 {
+    color: red;
+}
+
+h1 + p {
+    font-size: 200%;
+}
+
+p {
+    color: green;
+}
+
+p span {
+    color: red;
+}
+
+li {
+    list-style-type: none;
+}
+
+li em {
+    color: rebeccapurple;
+}
+
+.special {
+    color: orange;
+    font-weight: bold;
+}
