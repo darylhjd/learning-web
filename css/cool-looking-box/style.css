@@ -1,0 +1,29 @@
+html {
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+p {
+    /* General sizing and text alignment*/
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    width: 200px;
+    height: 3rem;
+    text-align: center;
+    line-height: 2.7272;
+
+    /* Background */
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) 30%);
+    background-color: red;
+
+    /* Border */
+    border-radius: 0.5em;
+    border: 1px solid darkred;
+    box-shadow: 0.1rem 0.1rem 0.1rem black,
+    inset 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.6),
+    inset -0.1rem -0.1rem 0.1rem rgba(0, 0, 0, 0.6);
+
+    /* Text */
+    color: red;
+    text-shadow: 0.05rem 0.05rem black;
+}
