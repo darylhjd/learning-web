@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 5em auto;
+    min-width: 700px;
+    max-width: 1000px;
+}
+
+.clock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    height: 10em;
+}
+
+.clock p {
+    font-size: 5em;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin: 1em;
+}
+
+.buttons button {
+    font-size: 2.5em;
+    padding: 0.1em;
+}
