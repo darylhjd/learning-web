@@ -1,43 +1,32 @@
-/* Main content */
-#bigHeader {
-    font-family: "Cousine", monospace;
-    margin-block-start: 4vh;
-}
-
-h1 {
-    font-size: 6.5em;
-    margin-block-end: 0.2em;
-}
-
 /* Navbar */
-#links ul {
-    padding: 0;
-    list-style-type: none;
+#bigHeader ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     gap: 1em;
+
+    padding: 0;
+    margin-block-start: 2em;
+    list-style-type: none;
 }
 
-#links li {
-    margin: 1em auto;
-    width: 16em;
+#bigHeader li {
+    width: 7em;
     border: 1px solid white;
 }
 
-#links a {
+#bigHeader a {
     display: block;
-    font-size: 1.7em;
-    text-align: center;
     padding-block: 0.5em;
+    text-align: center;
 }
 
-#links li:nth-child(3) a {
+#bigHeader ul li:nth-child(3) a {
     background-color: cadetblue;
 }
 
 /* Main body */
-main img {
+img {
     display: block;
     width: 75%;
     margin: 2vh auto;
@@ -45,43 +34,29 @@ main img {
 }
 
 main p {
-    font-size: 2em;
-    line-height: 1.6em;
     text-align: justify;
     margin-block-end: 2.2em;
+}
+
+h2 {
+    text-align: center;
 }
 
 #contactInfo p {
     text-align: center;
 }
 
-h2 {
-    font-size: 3em;
-    text-align: center;
-}
-
-@media (min-width: 630px) {
-    #bigHeader {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    h1 {
-        font-size: 7em;
-    }
-
-    #links ul {
+@media screen and (min-width: 730px) {
+    #bigHeader ul {
         display: block;
-        font-size: 1.1em;
+        margin: 0;
     }
 
-    #links li {
-        margin-block: 1.5em;
+    #bigHeader li {
+        margin: 1em auto;
     }
 
-    main img {
+    img {
         width: 100%;
-        border-radius: 0;
     }
 }

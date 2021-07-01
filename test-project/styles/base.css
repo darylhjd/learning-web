@@ -1,3 +1,4 @@
+/* General settings */
 html {
     font-family: "Roboto Mono", monospace;
     font-size: 10px;
@@ -9,7 +10,32 @@ body {
     background-color: black;
     color: white;
     margin: 1.5em;
-    height: 95vh;
+}
+
+#bigHeader {
+    font-family: "Cousine", monospace;
+    margin-block-start: 4vh;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.7em;
+    line-height: 1.7em;
+}
+
+ul {
+    font-size: 2em;
 }
 
 /* For terminal line at the top */
@@ -19,6 +45,9 @@ body {
 }
 
 /* Navbar links */
+li a {
+    transition: background-color 0.1s ease-in;
+}
 
 li a:link,
 li a:visited {
@@ -42,9 +71,9 @@ li a:active {
 }
 
 footer p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
-    margin-block-start: 10em;
+    margin-block-start: 7em;
 }
 
 /* General links */
@@ -53,13 +82,35 @@ a:visited {
     color: aqua;
 }
 
-@media (min-width: 730px) {
+@media screen and (min-width: 730px) {
     body {
         max-width: 700px;
         margin: 1.5em auto;
     }
 
-    .cmd {
-        font-size: 1.5em;
+    #bigHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 7em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    ul {
+        font-size: 2.2em;
     }
 }

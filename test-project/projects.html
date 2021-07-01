@@ -2,9 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Emoji favicon -->
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
     <title>Projects</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/projects_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&family=Roboto&family=Roboto+Mono&display=swap"
+          rel="stylesheet">
+
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
-This is the projects page.
+    <p class="cmd">$ cat darylhjd/PROJECTS.md<span id="cursor">_</span></p>
+
+    <div id="bigHeader">
+        <h1>Projects</h1>
+        <p>This page showcases some of my more interesting projects.</p>
+        <p>For the full list, visit my <a href="https://github.com/darylhjd">GitHub</a> page.</p>
+        <p>Have fun exploring!</p>
+    </div>
+
+    <hr>
+    <main>
+        <h2>Applications</h2>
+        <figure>
+            <picture>
+                <source media="(min-width: 730px)" srcset="assets/mangadesk_demo.gif">
+                <img src="assets/mangadesk_600x410.png" alt="MangaDesk Application">
+            </picture>
+            <figcaption>
+                <h3><a href="https://github.com/darylhjd/mangadesk">MangaDesk</a></h3>
+                <p class="skills">Language: Golang</p>
+                <p>A terminal-based manga downloader.</p>
+            </figcaption>
+        </figure>
+
+        <h2>APIs</h2>
+        <figure>
+            <figcaption>
+                <h3><a href="https://github.com/darylhjd/mangodex">mangodex</a></h3>
+                <p class="skills">Language: Golang</p>
+                <p>Golang wrapper for working with MangaDex API.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <figcaption>
+                <h3><a href="https://github.com/darylhjd/genshin-api">genshin-api</a></h3>
+                <p class="skills">Language: Golang</p>
+                <p>Golang wrapper for working with a fan-made Genshin Impact API.</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <figcaption>
+                <p>More to come! (hopefully)</p>
+            </figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>Har Jing Daryl©, 2021</p>
+    </footer>
 </body>
 </html>

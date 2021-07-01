@@ -1,59 +1,42 @@
-/* For the introduction box. Includes the nav */
 #bigHeader {
-    font-family: "Cousine", monospace;
     margin-block-start: 17vh;
 }
 
-header p {
-    font-size: 2em;
-}
-
-header h1 {
+#bigHeader h1 {
     margin-block-start: 0;
     font-size: 6em;
 }
 
 /* Navbar */
-nav ul {
+#bigHeader ul {
     padding: 0;
     margin-block-start: 2em;
-    margin-block-end: 4em;
-    font-size: 2.5em;
     list-style-type: none;
 }
 
-nav li {
+#bigHeader li {
     margin: 1em auto;
     width: 6.5em;
     border: 1px solid white;
 }
 
-nav a {
+#bigHeader a {
     display: block;
     padding: 0.5em;
     text-align: center;
-    font-size: 0.7em;
 }
 
-/* Bigger screens */
-@media (min-width: 630px) {
-    #bigHeader {
-        margin-block-start: 17vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+footer p {
+    margin-block-start: 12em;
+}
+
+@media screen and (min-width: 730px) {
+    #bigHeader ul {
+        margin: 0;
     }
 
-    header p {
-        font-size: 3em;
-    }
-
-    header h1 {
+    #bigHeader h1 {
         font-size: 9em;
-    }
-    
-    nav a {
-        padding: 0.7em;
-        font-size: 0.9em;
+        margin: 0;
     }
 }
