@@ -1,0 +1,19 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: black;
+    color: white;
+    margin: 1.5em;
+    height: 95vh;
+}
+
+/* For terminal line at the top */
+.cmd {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.5em;
+}
