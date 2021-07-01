@@ -1,10 +1,87 @@
 /* Main content */
-#main {
+#bigHeader {
     font-family: "Cousine", monospace;
-    margin-block-start: 17vh;
+    margin-block-start: 4vh;
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 6.5em;
+    margin-block-end: 0.2em;
 }
 
+/* Navbar */
+#links ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+#links li {
+    margin: 1em auto;
+    width: 16em;
+    border: 1px solid white;
+}
+
+#links a {
+    display: block;
+    font-size: 1.7em;
+    text-align: center;
+    padding-block: 0.5em;
+}
+
+#links li:nth-child(3) a {
+    background-color: cadetblue;
+}
+
+/* Main body */
+main img {
+    display: block;
+    width: 75%;
+    margin: 2vh auto;
+    object-fit: cover;
+}
+
+main p {
+    font-size: 2em;
+    line-height: 1.6em;
+    text-align: justify;
+    margin-block-end: 2.2em;
+}
+
+#contactInfo p {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+@media (min-width: 630px) {
+    #bigHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 7em;
+    }
+
+    #links ul {
+        display: block;
+        font-size: 1.1em;
+    }
+
+    #links li {
+        margin-block: 1.5em;
+    }
+
+    main img {
+        width: 100%;
+        border-radius: 0;
+    }
+}

@@ -1,5 +1,5 @@
 html {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Mono", monospace;
     font-size: 10px;
     box-sizing: border-box;
 }
@@ -16,4 +16,50 @@ body {
 .cmd {
     font-family: "Roboto Mono", monospace;
     font-size: 1.5em;
+}
+
+/* Navbar links */
+
+li a:link,
+li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover,
+li a:focus {
+    color: black;
+    background-color: white;
+}
+
+li a:focus {
+    outline: none;
+}
+
+li a:active {
+    color: black;
+    background-color: aqua;
+}
+
+footer p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-block-start: 10em;
+}
+
+/* General links */
+a:link,
+a:visited {
+    color: aqua;
+}
+
+@media (min-width: 730px) {
+    body {
+        max-width: 700px;
+        margin: 1.5em auto;
+    }
+
+    .cmd {
+        font-size: 1.5em;
+    }
 }

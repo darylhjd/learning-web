@@ -1,5 +1,5 @@
 /* For the introduction box. Includes the nav */
-#main {
+#bigHeader {
     font-family: "Cousine", monospace;
     margin-block-start: 17vh;
 }
@@ -24,7 +24,7 @@ nav ul {
 
 nav li {
     margin: 1em auto;
-    max-width: 6.5em;
+    width: 6.5em;
     border: 1px solid white;
 }
 
@@ -35,44 +35,9 @@ nav a {
     font-size: 0.7em;
 }
 
-nav a:link,
-nav a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover,    
-nav a:focus {
-    color: black;
-    background-color: white;
-}
-
-nav a:focus {
-    outline: none;
-}
-
-nav a:active {
-    color: black;
-    background-color: aqua;
-}
-
-footer p {
-    text-align: center;
-    margin-block-start: 4em;
-}
-
 /* Bigger screens */
 @media (min-width: 630px) {
-    body {
-        max-width: 600px;
-        margin: 1.5em auto;
-    }
-
-    .cmd {
-        font-size: 1.5em;
-    }
-    
-    #main {
+    #bigHeader {
         margin-block-start: 17vh;
         display: flex;
         justify-content: space-between;
